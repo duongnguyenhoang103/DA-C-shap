@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace QuanLyThuVien
+{
+    public partial class frmNguoiMuon : Form
+    {
+        public frmNguoiMuon()
+        {
+            InitializeComponent();
+        }
+
+        public void cap_nhat()
+        {
+        }
+
+        private void frmNguoiMuon_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mn_capnhat_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

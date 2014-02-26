@@ -1,0 +1,2 @@
+taikhoan: admin
+matkhau: admin

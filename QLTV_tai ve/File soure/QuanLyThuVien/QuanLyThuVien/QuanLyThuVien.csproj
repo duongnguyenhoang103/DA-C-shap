@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B3BA41F-E971-4F78-9EB7-61D41AEAD29F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyThuVien</RootNamespace>
+    <AssemblyName>QuanLyThuVien</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>qltv.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackground.Designer.cs">
+      <DependentUpon>frmBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuonSach.Designer.cs">
+      <DependentUpon>frmMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoaiSach.designer.cs">
+      <DependentUpon>frmLoaiSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNguoiMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNguoiMuon.Designer.cs">
+      <DependentUpon>frmNguoiMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNXB.designer.cs">
+      <DependentUpon>frmNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSach.designer.cs">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTacGia.designer.cs">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBackground.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuonSach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiSach.resx">
+      <DependentUpon>frmLoaiSach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNguoiMuon.resx">
+      <DependentUpon>frmNguoiMuon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNXB.resx">
+      <DependentUpon>frmNXB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSach.resx">
+      <DependentUpon>frmSach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTacGia.resx">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them\frmAddLoaiSach.resx">
+      <DependentUpon>frmAddLoaiSach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them\frmAddMuonSach.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them\frmAddNguoiDung.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them\frmAddNguoiMuon.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddNguoiMuon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them\frmAddNXB.resx">
+      <DependentUpon>frmAddNXB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them\frmAddSach.resx">
+      <DependentUpon>frmAddSach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Them\frmAddTacGia.resx">
+      <DependentUpon>frmAddTacGia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Them\frmAddLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them\frmAddLoaiSach.Designer.cs">
+      <DependentUpon>frmAddLoaiSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Them\frmAddMuonSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them\frmAddMuonSach.Designer.cs">
+      <DependentUpon>frmAddMuonSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Them\frmAddNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them\frmAddNguoiDung.Designer.cs">
+      <DependentUpon>frmAddNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Them\frmAddNguoiMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them\frmAddNguoiMuon.Designer.cs">
+      <DependentUpon>frmAddNguoiMuon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Them\frmAddNXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them\frmAddNXB.designer.cs">
+      <DependentUpon>frmAddNXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Them\frmAddSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them\frmAddSach.designer.cs">
+      <DependentUpon>frmAddSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Them\frmAddTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Them\frmAddTacGia.designer.cs">
+      <DependentUpon>frmAddTacGia.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="qltv.ico" />
+    <None Include="Resources\bg2.png" />
+    <None Include="Resources\bg1.jpg" />
+    <None Include="Resources\bg1.png" />
+    <None Include="Resources\bg.png" />
+    <None Include="Resources\label_32.png" />
+    <None Include="Resources\caption.png" />
+    <None Include="Resources\previewbackground.png" />
+    <None Include="Resources\untitled.PNG" />
+    <None Include="Resources\menumain.png" />
+    <None Include="Resources\menubg.png" />
+    <None Include="Resources\grouppanelcaptionbottom.png" />
+    <None Include="Resources\bar.png" />
+    <None Include="Resources\Book 1 %28Custom%29.png" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\calendar_32.png" />
+    <None Include="Resources\Office Girl.png" />
+    <None Include="Resources\Preppy.png" />
+    <None Include="Resources\lightbulb_off.png" />
+    <None Include="Resources\lightbulb.png" />
+    <None Include="Resources\plus_16.png" />
+    <None Include="Resources\address_16.png" />
+    <None Include="Resources\user_16.png" />
+    <None Include="Resources\user_info_48.png" />
+    <None Include="Resources\Book 2.png" />
+    <None Include="Resources\Book 31.png" />
+    <None Include="Resources\label_16.png" />
+    <None Include="Resources\pencil_16.png" />
+    <None Include="Resources\chart_organisation.png" />
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\magnifier.png" />
+    <None Include="Resources\Book 3.png" />
+    <None Include="Resources\user_delete.png" />
+    <None Include="Resources\user_add.png" />
+    <None Include="Resources\arrow_refresh.png" />
+    <None Include="Resources\book_open.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\book_addresses.png" />
+    <None Include="Resources\application_edit.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\vcard.png" />
+    <None Include="Resources\world.png" />
+    <None Include="Resources\cross_octagon.png" />
+    <None Include="Resources\status_online.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
